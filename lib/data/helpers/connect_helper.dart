@@ -40,7 +40,7 @@ class ConnectHelper {
         'https://top-10-spotify.p.rapidapi.com/',
         Request.get,
         null,
-        false,
+        true,
         {
           'X-RapidAPI-Key':
               '6384636196msh72ef36278ef686ap188098jsn80025042d132',
