@@ -8,9 +8,11 @@
   abstract class Routes {
     static const splashScreen = _Paths.splashScreen;
     static const manageCityScreen = _Paths.manageCityScreen;
+    static const musicPlayerScreen = _Paths.musicPlayerScreen;
   }
 
 abstract class _Paths {
   static const splashScreen = '/splash-screen';
   static const manageCityScreen = '/manage-city';
+  static const musicPlayerScreen = '/music-player';
 }

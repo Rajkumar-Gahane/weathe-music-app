@@ -17,4 +17,6 @@ class AuthUseCase {
           required bool isLoading}) async =>
       await _respository.getFiveDayWeatherResponse(
           long: long, lati: lati, isLoading: isLoading);
+
+  Future<ResponseModel?> getMusicFromApi()async => await _respository.getMusicFromApi();
 }

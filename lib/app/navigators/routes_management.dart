@@ -4,4 +4,8 @@ abstract class RouteManagement {
   static void goToHome() {
     Get.offAllNamed<void>(Routes.manageCityScreen);
   }
+
+  static void goToAudioPlayer() {
+    Get.offAllNamed<void>(Routes.musicPlayerScreen);
+  }
 }

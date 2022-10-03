@@ -17,4 +17,7 @@ class ManageCityPresenter {
         required bool isLoading}) async =>
       await _authUseCase.getFiveDayWeatherResponse(
           long: long, lati: lati, isLoading: isLoading);
+
+  Future<ResponseModel?> getMusicFromApi()async => await _authUseCase.getMusicFromApi();
+
 }

@@ -41,7 +41,8 @@ class WeatherHomeView extends StatelessWidget {
                   // await _controller.screenShotController
                   //     .captureAndSave()
                   //     .then((capturedImage) async {
-                  await Get.to<void>(()=>const MusicPlayerLIstView());
+                  // await Get.to<void>(()=>const MusicPlayerLIstView());
+                  RouteManagement.goToAudioPlayer();
                     // await FlutterShare.share(title: 'Weather', linkUrl: '',);
                   //   // await ShowCapturedWidget(context, capturedImage);
                   // });

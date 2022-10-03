@@ -11,6 +11,7 @@ class ManageCityController extends GetxController {
 
   @override
   void onInit() async {
+    await getMusicFromApi();
     var position = await _getGeoLocationPosition();
     await getAddressFromLatLong(position);
     // location = 'Lat: ${position.latitude} , Long: ${position.longitude}';
@@ -175,6 +176,8 @@ class ManageCityController extends GetxController {
     }
     return response;
   }
+
+  Future<ResponseModel?> getMusicFromApi()async => await _manageCityPresenter.getMusicFromApi();
 
   List<ChartData> chartData = [];
 

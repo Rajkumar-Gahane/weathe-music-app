@@ -22,6 +22,13 @@ class AppPages {
       binding: ManageCityBinding(),
       transition: Transition.fadeIn,
     ),
+    GetPage<MusicPlayerLIstView>(
+      name: _Paths.musicPlayerScreen,
+      transitionDuration: transitionDuration,
+      page: MusicPlayerLIstView.new,
+      binding: AudioPlayerBinding(),
+      transition: Transition.downToUp,
+    ),
   ];
   static var authPages = <GetPage>[
     // SplashView

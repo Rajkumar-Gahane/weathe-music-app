@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/cupertino.dart';
 import 'package:weather_app/data/repositories/data_repositories.dart';
 import 'package:weather_app/device/repositories/device_repositories.dart';
@@ -65,5 +67,10 @@ class Repository {
       debugPrint(data.toString());
       return null;
     }
+  }
+
+  Future<ResponseModel?> getMusicFromApi()async{
+    var response = await _dataRepository.getMusicFromApi();
+    log(response!.data);
   }
 }
