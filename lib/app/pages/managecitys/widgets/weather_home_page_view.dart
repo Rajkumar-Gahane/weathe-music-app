@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:shimmer/shimmer.dart';
 import 'package:weather_app/app/app.dart';
-import 'package:weather_app/app/pages/audio_palyer_view/audio_player_page_view.dart';
 
 class WeatherHomeView extends StatelessWidget {
   const WeatherHomeView({Key? key}) : super(key: key);

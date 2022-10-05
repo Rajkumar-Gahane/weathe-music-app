@@ -72,5 +72,6 @@ class Repository {
   Future<ResponseModel?> getMusicFromApi()async{
     var response = await _dataRepository.getMusicFromApi();
     log(response!.data);
+    return null;
   }
 }
